@@ -65,7 +65,7 @@
 
     - #### Show all running docker containers
 
-        ```docker
+        ```sh
         docker ps
         ```
         **[⬆ Back to Top](#table-of-contents)**
@@ -73,7 +73,7 @@
         
     - #### Show all docker containers
 
-        ```docker
+        ```sh
         docker ps -a
         ```
 
@@ -82,7 +82,7 @@
     
     - #### Run a container
 
-        ```docker
+        ```sh
         docker run <image>:<tag>
         ```
 
@@ -91,7 +91,7 @@
     
     - #### Run a container and connect to it
 
-        ```docker
+        ```sh
         docker run -it <image>:<tag>
         ```
 
@@ -100,7 +100,7 @@
     
     - #### Run a container in the background
 
-        ```docker
+        ```sh
         docker run -d <image>:<tag>
         ```
 
@@ -109,7 +109,7 @@
     
     - #### Stop a container
 
-        ```docker
+        ```sh
         docker stop <container>
         ```
 
@@ -118,7 +118,7 @@
     
     - #### Kill a container
 
-        ```docker
+        ```sh
         docker kill <container>
         ```
 
@@ -128,7 +128,7 @@
 
     - #### List volumes
 
-        ```docker
+        ```sh
         docker volume ls
         ```
 
@@ -137,7 +137,7 @@
     
     - #### Create a volume
 
-        ```docker
+        ```sh
         docker volume create <volume>
         ```
 
@@ -146,7 +146,7 @@
     
     - #### Delete a volume
 
-        ```docker
+        ```sh
         docker volume rm <volume>
         ```
 
@@ -155,7 +155,7 @@
     
     - #### Show volume metadata
 
-        ```docker
+        ```sh
         docker volume inspect <volume>
         ```
 
@@ -164,7 +164,7 @@
     
     - #### Delete all volumes not attached to a container
 
-        ```docker
+        ```sh
         docker volume prune
         ```
 
@@ -173,7 +173,7 @@
     
     - #### Mount a local directory to your container
 
-        ```docker
+        ```sh
         docker run -v <local_dir>:<container_dir> <image>
         ```
 
@@ -182,7 +182,7 @@
     
     - #### Copy file or folder from a docker container to host machine
 
-        ```docker
+        ```sh
         docker cp container>:<container_dir> <local_dir>
         ```
 
@@ -191,7 +191,7 @@
     
     - #### Copy file or folder from local machine onto a container
 
-        ```docker
+        ```sh
         docker cp <local_dir> <container>:<container_dir>
         ```
 
@@ -200,7 +200,7 @@
     
     - #### Map a local port to a docker instance
 
-        ```docker
+        ```sh
         docker run -d -p 127.0.0.1:<local_port>:<docker_port> <image>
         ```
 
@@ -209,7 +209,7 @@
     
     - #### List the ports a docker container is running on
 
-        ```docker
+        ```sh
         docker port <container>
         ```
 
@@ -221,7 +221,7 @@
     
     - #### Start your docker-compose defined resources in detached mode
 
-        ```docker
+        ```sh
         docker-compose up -d -f <docker_compose_yaml>
         ```
 
@@ -230,7 +230,7 @@
     
     - #### Stop all docker-compose resources
 
-        ```docker
+        ```sh
         docker-compose stop
         ```
 
@@ -239,7 +239,7 @@
     
     - #### Destroy all docker-compose resources
 
-        ```docker
+        ```sh
         docker-compose down
         ```
 
@@ -248,7 +248,7 @@
     
     - #### Show docker-compose processes
 
-        ```docker
+        ```sh
         docker-compose ps
         ```
 
@@ -257,7 +257,7 @@
     
     - #### Show docker-compose logs
 
-        ```docker
+        ```sh
         docker-compose logs
         ```
 
@@ -266,7 +266,7 @@
     
     - #### Show docker-compose resource consumption
 
-        ```docker
+        ```sh
         docker-compose top
         ```
 
@@ -279,7 +279,7 @@
 
     - #### List available local images
 
-        ```docker
+        ```sh
         docker images
         ```
 
@@ -288,7 +288,7 @@
     
     - #### Search for docker images
 
-        ```docker
+        ```sh
         docker search <image>
         ```
 
@@ -297,7 +297,7 @@
     
     - #### Pull a docker image
 
-        ```docker
+        ```sh
         docker pull <image>
         ```
 
@@ -306,7 +306,7 @@
     
     - #### Build an image with a dockerfile
 
-        ```docker
+        ```sh
         docker build -t <image>:<tag> <run_directory> -f <dockerfile>
         ```
 
@@ -315,16 +315,16 @@
     
     - #### Login to a remote repository
 
-        ```docker
+        ```sh
         docker login <repository>
         ```
 
         **[⬆ Back to Top](#table-of-contents)**
 
     
-    - #### Push an image to your remotee repository
+    - #### Push an image to your remote repository
 
-        ```docker
+        ```sh
         docker push <image>:<tag>
         ```
 
@@ -333,7 +333,7 @@
     
     - #### Remove a local docker image
 
-        ```docker
+        ```sh
         docker rmi <image>:<tag>
         ```
 
@@ -342,7 +342,7 @@
     
     - #### Show metadata for an image
 
-        ```docker
+        ```sh
         docker inspect <image>
         ```
 
@@ -351,7 +351,7 @@
     
     - #### Remove all unused docker images
 
-        ```docker
+        ```sh
         docker image prune
         ```
 
@@ -364,7 +364,7 @@
 
     - #### Show the logs of a container
 
-        ```docker
+        ```sh
         docker logs <container>
         ```
 
@@ -373,7 +373,7 @@
     
     - #### Follow/tail the logs of a container
 
-        ```docker
+        ```sh
         docker logs -f <container>
         ```
 
@@ -382,7 +382,7 @@
     
     - #### Show timestamps on docker logs
 
-        ```docker
+        ```sh
         docker logs -t <container>
         ```
 
@@ -391,7 +391,7 @@
     
     - #### Show details/metadata of a container
 
-        ```docker
+        ```sh
         docker inspect <container>
         ```
 
@@ -400,7 +400,7 @@
     
     - #### Show a 'top' view of processes running on a container
 
-        ```docker
+        ```sh
         docker top <container>
         ```
 
@@ -409,7 +409,7 @@
     
     - #### Show a 'top' view of all docker containers
 
-        ```docker
+        ```sh
         docker stats
         ```
 
@@ -418,7 +418,7 @@
     
     - #### Show any files that have changed since startup
 
-        ```docker
+        ```sh
         docker diff <container>
         ```
 
@@ -427,7 +427,7 @@
     
     - #### Connect to an already running container
 
-        ```docker
+        ```sh
         docker attach <container>
         ```
 
@@ -436,7 +436,7 @@
     
     - #### Execute a command on a container
 
-        ```docker
+        ```sh
         docker exec -it <container_id> /bin/bash
         ```
 
@@ -445,7 +445,7 @@
     
     - #### Show docker system wide information
 
-        ```docker
+        ```sh
         docker system info
         ```
 
@@ -454,7 +454,7 @@
     
     - #### Show docker disk space used
 
-        ```docker
+        ```sh
         docker system df
         ```
 
